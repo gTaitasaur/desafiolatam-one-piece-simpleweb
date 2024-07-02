@@ -1,0 +1,185 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #FBC920 5%,#E62C39 8%);
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    color: white;
+    background-image: url('../images/OnePieceSkull.png');
+    background-attachment: fixed;
+    background-size: normal;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 180px 150px;
+    padding: 0px 20px;
+}
+/* HEADER */
+header h1{
+    font-family: "Pirata One", system-ui;
+    font-size: 3.5em;
+    color: #2F76DC;
+}
+
+/* NAVBAR */
+.menu-arcos {
+    text-align: center;
+}
+
+.menu-arcos img {
+    height: 80px;
+    width: auto;
+}
+
+.menu-arcos ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    list-style: none;
+    padding: 10px;
+    margin: 20px 0 0;
+    align-items: center;
+}
+
+.menu-arcos a {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    font-family: "Playwrite NG Modern", cursive;
+    font-size: 1.3em;
+    transition: transform 0.3s ease;
+}
+
+.menu-arcos a:hover {
+    transform: scale(1.3);
+}
+
+/* RESUMEN */
+.resume h2{
+    margin-top: 55px;
+    border-bottom: 3px solid #DFC18A;
+    border-top: 1px solid #DFC18A;
+    font-family: "Pirata One", system-ui;
+    font-size: 2.5em;
+}
+
+.resume-text{
+    border: 2px solid #2E333F;
+    border-radius: 10px;
+    font-size: 0.9em;
+    background-color:rgba(46, 51, 63, 0.3);
+    padding: 5px;
+    font-family: "Playwrite NG Modern", cursive;
+    font-size: 1.2em;
+}
+
+/* RESUMEN ARCOS */
+.arcos{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px 0px;
+    gap: 10px;
+}
+
+.arcos h2{
+    margin-top: 55px;
+    border-bottom: 3px solid #DFC18A;
+    border-top: 1px solid #DFC18A;
+    font-family: "Pirata One", system-ui;
+    font-size: 2.5em;
+}
+
+.normal-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid #DFC18A;
+    border-radius: 8px;
+    padding: 10px;
+    background-color:rgba(223, 193, 138, 0.5);
+}
+
+.reverse-row{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid #B9EFF8;
+    border-radius: 8px;
+    padding: 10px;
+    background-color:rgba(185, 239, 248, 0.5);
+}
+
+.arcos img{
+    height: 200px;
+}
+
+.arcos .text-arcs h2{
+    font-family: "Pirata One", system-ui;
+    font-size: 2.5em;
+    border-top: 0px;
+    border-bottom: 3px solid #2E333F;
+}
+
+.arcos .text-arcs p{
+    font-family: "Playwrite NG Modern", cursive;
+    font-size: 1.2em;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: column;
+    color: #2E333F;
+    font-weight: bolder;
+    font-size: 0.9em;
+    margin: 15px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2F76DC;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+}
+
+footer img{
+    margin-top: 10px;
+    height: 60px;
+    width: auto;
+}
+
+footer p{
+    padding: 0px 10px;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 576px) {
+    .menu-arcos img {
+        height: 60px;
+    }
+
+    .menu-arcos ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .normal-row{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .reverse-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .arcos img{
+        width: 150px;
+        height: auto;
+    }
+}
